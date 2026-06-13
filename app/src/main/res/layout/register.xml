@@ -14,48 +14,38 @@
         android:id="@+id/loginButton2"
         android:layout_width="171dp"
         android:layout_height="53dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/btn_reg_log"
         android:text="Регестрация"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintHorizontal_bias="0.229"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="642dp" />
-
-    <View
-        android:id="@+id/view3"
-        android:layout_width="327dp"
-        android:layout_height="313dp"
-        android:background="@drawable/lr_back"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
 
     <!-- Заголовок "Вход" -->
 
     <!-- Поле для Логина -->
 
-    <TextView
-        android:id="@+id/titleTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Вход"
-        android:textColor="#000000"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="173dp"
-        tools:layout_editor_absoluteY="133dp" />
+    <View
+        android:id="@+id/view3"
+        android:layout_width="363dp"
+        android:layout_height="324dp"
+        android:background="@drawable/lr_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.358" />
 
     <EditText
-        android:id="@+id/loginEditText"
-        android:layout_width="0dp"
+        android:id="@+id/loginEditText2"
+        android:layout_width="315dp"
         android:layout_height="50dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/f_back"
         android:ems="10"
         android:hint="Логин"
@@ -64,19 +54,69 @@
         android:paddingEnd="16dp"
         android:textColor="#000000"
         android:textColorHint="#999999"
-        app:layout_constraintBottom_toTopOf="@+id/passwordEditText"
         app:layout_constraintEnd_toEndOf="@+id/view3"
         app:layout_constraintStart_toStartOf="@+id/view3"
-        app:layout_constraintTop_toTopOf="@+id/view3"
-        app:layout_constraintVertical_chainStyle="packed" />
+        app:layout_constraintTop_toTopOf="@+id/view3" />
+
+    <EditText
+        android:id="@+id/loginEditText3"
+        android:layout_width="315dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/f_back"
+        android:ems="10"
+        android:hint="Логин"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="#000000"
+        android:textColorHint="#999999"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintStart_toStartOf="@+id/view3"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Регистрация"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Поле для Пароля -->
+
+    <!-- Кнопка Входа -->
+
+    <!-- Ссылка на регистрацию -->
+
+    <EditText
+        android:id="@+id/loginEditText"
+        android:layout_width="315dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/f_back"
+        android:ems="10"
+        android:hint="Логин"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="#000000"
+        android:textColorHint="#999999"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintStart_toStartOf="@+id/view3"
+        app:layout_constraintTop_toBottomOf="@+id/loginEditText2" />
+
     <EditText
         android:id="@+id/passwordEditText"
-        android:layout_width="0dp"
+        android:layout_width="315dp"
         android:layout_height="50dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginTop="36dp"
         android:background="@drawable/f_back"
         android:ems="10"
         android:hint="Пароль"
@@ -85,20 +125,15 @@
         android:paddingEnd="16dp"
         android:textColor="#000000"
         android:textColorHint="#999999"
-        app:layout_constraintBottom_toTopOf="@+id/loginButton"
         app:layout_constraintEnd_toEndOf="@+id/view3"
         app:layout_constraintStart_toStartOf="@+id/view3"
-        app:layout_constraintTop_toBottomOf="@+id/loginEditText"
-        android:layout_marginBottom="24dp" />
-
-    <!-- Кнопка Входа -->
-
-    <!-- Ссылка на регистрацию -->
+        app:layout_constraintTop_toBottomOf="@+id/loginEditText" />
 
     <Button
         android:id="@+id/loginButton"
         android:layout_width="279dp"
         android:layout_height="50dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/btn_reg_log"
         android:text="Войти"
         android:textColor="#FFFFFF"
@@ -106,6 +141,6 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="570dp" />
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
