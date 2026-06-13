@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Тень (сдвинута вниз и вправо) -->
+    <item
+        android:left="4dp"
+        android:top="6dp"
+        android:right="-4dp"
+        android:bottom="-6dp">
+        <shape>
+            <corners android:radius="30dp"/>
+            <solid android:color="#80000000"/>
+        </shape>
+    </item>
+
+    <!-- Основной фон -->
+    <item>
+        <shape>
+            <corners android:radius="30dp"/>
+            <solid android:color="#CDECFF"/>
+        </shape>
+    </item>
+</layer-list>
